@@ -21,7 +21,7 @@ Android Emulator or a physical Android/iOS device for running the app.
 Installation Steps
 Clone the Repository:
 
-git clone https://github.com/Akshada-26/IoT-Connected-Health-App.git
+git clone https://github.com/Akshada-26/AkshadaZinzurade_OralensAssignment_MobileAppDevelopemnt/tree/main
 cd IoT-Connected-Health-App
 Install Dependencies: Run the following command to install the necessary Flutter dependencies.
 
