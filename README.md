@@ -82,5 +82,4 @@ Add More Device Types: Integrate more health-monitoring devices (e.g., glucose m
 User Authentication: Add user login and profile features to track data across devices and sessions.
 Notifications: Implement notifications for critical health metrics.
 Cloud Syncing: Allow data to be synced to the cloud for remote monitoring by healthcare providers.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
