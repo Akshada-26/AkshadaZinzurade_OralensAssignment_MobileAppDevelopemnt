@@ -1,0 +1,51 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    // Specify the namespace for your app (update to match the applicationId)
+    namespace 'com.example.iot_health_app'  // Ensure this matches your applicationId
+     
+    // SDK and NDK versions from Flutter
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // Unique Application ID for your app
+        applicationId = "com.example.iot_health_app"  // Ensure this matches the namespace
+        // Update values to match your app needs
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Signing config for release (can be configured further)
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    // Optional: configure build flavors, product flavors, etc.
+    // productFlavors {
+    //   create("free") { ... }
+    //   create("paid") { ... }
+    // }
+}
+
+flutter {
+    source = "../.."  // Path to your Flutter SDK (adjust if needed)
+}
